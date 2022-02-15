@@ -5,8 +5,8 @@ int	main()
 {
 	int x;
 	char a[10] = "ola mundo";
-	char b[100] = "";
+	char b[100] = "ola Mundo";
 
-	x = strncmp(a, b, 2);
+	x = strncmp(a, b, 5);
 	printf("%d", x);
 }
