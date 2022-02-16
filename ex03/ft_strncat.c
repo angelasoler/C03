@@ -31,15 +31,3 @@ char *ft_strncat(char *dest, char  *src, unsigned int nb)
 	dest[size] = '\0';
 	return(dest);
 }
-
-#include <stdio.h>
-
-int	main()
-{
-	char a[10] = "ola mundo";
-	char b[100] = "ola Mundo";
-
-	ft_strncat(a, b, 15);
-
-	printf("%s\n", a);
-}

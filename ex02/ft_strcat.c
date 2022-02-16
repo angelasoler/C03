@@ -1,5 +1,4 @@
 
-
 int count(char *s)
 {
 	int i;
@@ -11,6 +10,7 @@ int count(char *s)
 	}
 	return(i);
 }
+
 char *ft_strcat(char *dest, const char *src)
 {
 	int i;
