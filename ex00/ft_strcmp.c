@@ -1,18 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/16 01:54:04 by asoler            #+#    #+#             */
+/*   Updated: 2022/02/16 01:58:30 by asoler           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char	*s1, char	*s2)
 {
-	
-	int result;
-	int i;
+	int	result;
+	int	i;
 
 	i = 0;
-
 	while (s1[i] == s2[i])
 	{
 		i++;
 	}
 	result = s1[i] - s2[i];
-
-	return(result);
+	return (result);
 }

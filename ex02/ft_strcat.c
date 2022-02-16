@@ -1,20 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/16 01:53:47 by asoler            #+#    #+#             */
+/*   Updated: 2022/02/16 01:59:33 by asoler           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int count(char *s)
+int	count(char	*s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (s[i] != '\0')
 	{
 		i++;
 	}
-	return(i);
+	return (i);
 }
 
-char *ft_strcat(char *dest, const char *src)
+char	*ft_strcat(char	*dest, const char	*src)
 {
-	int i;
-	int size;
+	int	i;
+	int	size;
 
 	size = count(dest);
 	i = 0;
@@ -25,15 +36,5 @@ char *ft_strcat(char *dest, const char *src)
 		size++;
 	}
 	dest[size] = src[i];
-	return(dest);
-}
-
-#include <stdio.h>
-int	main()
-{
-	char a[10] = "ola mundo";
-	char b[100] = "ola Mundo";
-
-	ft_strcat(a, b);
-	printf("%s", a);
+	return (dest);
 }
